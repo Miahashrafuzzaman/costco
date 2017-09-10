@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CostcoTestSuite" parallel="tests" thread-count="2">
+
+    <test name="NavigationShopAllFunctionalityTest-chrome">
+        <parameter name="browser" value="ch-grid"/>
+        <classes>
+            <class name="com.costco.scripts.NavigationShopAllFunctionality"/>
+            <class name="com.costco.scripts.CartFunctionality"/>
+            <class name="com.costco.scripts.GetEmailOfferFunctionality"/>
+            <class name="com.costco.scripts.RegisterFunctionality"/>
+            <class name="com.costco.scripts.WarehouseLInkFunctionality" />
+            <class name="com.costco.scripts.SigninFunctionality"/>
+        </classes>
+    </test>
+
+    <test name="NavigationShopAllFunctionalityTest-firefox">
+        <parameter name="browser" value="ff-grid"/>
+        <classes>
+            <class name="com.costco.scripts.NavigationShopAllFunctionality"/>
+            <class name="com.costco.scripts.CartFunctionality"/>
+            <class name="com.costco.scripts.GetEmailOfferFunctionality"/>
+            <class name="com.costco.scripts.RegisterFunctionality"/>
+            <class name="com.costco.scripts.WarehouseLInkFunctionality" />
+            <class name="com.costco.scripts.SigninFunctionality"/>
+        </classes>
+    </test>
+
+    <test name="NavigationShopAllFunctionalityTest-internet explorer">
+        <parameter name="browser" value="ie-grid"/>
+        <classes>
+            <class name="com.costco.scripts.NavigationShopAllFunctionality"/>
+            <class name="com.costco.scripts.CartFunctionality"/>
+            <class name="com.costco.scripts.GetEmailOfferFunctionality"/>
+            <class name="com.costco.scripts.RegisterFunctionality"/>
+            <class name="com.costco.scripts.WarehouseLInkFunctionality" />
+            <class name="com.costco.scripts.SigninFunctionality"/>
+        </classes>
+    </test>
+
+</suite>
